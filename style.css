@@ -1,0 +1,310 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body a:hover{
+	color: red;
+}
+.menu{
+	width: 840px;
+	height: 40px;
+	position: absolute;
+	transform: scale(0);
+	top: 300px;
+	left: 50%;
+	z-index: 2;
+	margin-left: -400px;
+	animation-name: Menu;
+	animation-duration: 4s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+.menu ul{
+	list-style: none;
+
+
+}
+
+.menu > ul > li{
+	float: left;
+	
+}
+
+.menu > ul > li{
+	width: 120px;
+	position: relative;
+}
+.menu > ul  li  a{
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+	background-color: #dddddd;
+	display: block;
+	padding: 10px;
+}
+
+.menu > ul > li > a{
+	border-right: 3px solid white;
+}
+.menu > ul li:hover > a{
+	background-color: white;
+}
+
+.menu > ul > li > ul{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	z-index: 3;
+	width: 150px;
+	border-top: 3px solid orange;
+	opacity: 0;
+	transition: 0.3s;
+	visibility: hidden;
+}
+
+.menu > ul > li:hover > ul{
+	opacity: 1;
+	top: 40px;
+	transition: 0.3s;
+	visibility: visible;
+}
+
+.menu > ul > li > ul li ul{
+	position: absolute;
+	top: -3px;
+	left: 200px;
+	width: 150px;
+	border-top: 3px solid orange;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.menu > ul > li > ul li:hover > ul{
+	opacity: 1;
+	left: 150px;
+	visibility: visible;
+	transition: 0.3s;
+}
+
+/*End menu1*/
+
+/*Start menu in content*/
+.menuInContent1 > ul > li{
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+.menuInContent1{
+	width: 800px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.menuInContent1 a:hover{
+	color: red;
+}
+.menuInContent1 > ul > li > a{
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+	display: block;
+	padding: 10px;
+}
+/*End menu in content*/
+.khungNgoai{
+	width: 1490px;
+	height: 700px;
+	border: 1px solid black;
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.khungNgoai .content1:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+	border: 1px solid black;
+	box-shadow: 1px 1px 20px 0 black;
+}
+
+.khungNgoai .content1{
+	width: 850px;
+	height: 700px;
+	background-color: white;
+	float: left;
+	transition: 0.5s;
+}
+
+.khungNgoai .content2{
+	width: 600px;
+	height: 700px;
+	float: right;
+}
+.elementContent1{
+	width: 800px;
+}
+.element{
+	width: 820px;
+	margin-left: 10px;
+}
+
+.element a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.comment a{
+	color: grey;
+	font-size: 15px;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+.element .content1Element1{
+	width: 400px;
+	height: 645px;
+	float: left;
+}
+.element .content1Element2{
+	width: 400px;
+	height: 645px;
+	margin-left: 10px;
+	float: right;
+}
+.elementInContent{
+	width: 400px;
+	height: 86px;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.imgContent > img{
+	transition: 0.5s;
+	width: 400px;
+    height: 300px;
+    transition: 0.5s;
+}
+.imgContent{
+	overflow: hidden;
+}
+
+.imgContent:hover img{
+	transform: scale(1.5);
+	transition: 0.5s;
+	box-shadow: 1px 1px 20px 0 black;
+	opacity: 0.6;
+}
+
+
+/*End khung ben trai*/
+.TheA-inContent2{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	border-bottom: 1px solid blue;
+}
+div{
+	margin-bottom: 10px;
+}
+.content2{
+	margin-right: 10px;
+}
+.content2 .khungOwlCarousel{
+	width: 600px;
+	height: 300px;
+}
+.owlCarousel{
+	width: 600px;
+	height: 350px;
+}
+
+.content2 .khungGallery{
+	width: 600px;
+	height: 300px;
+}
+
+.khungGallery .lightgallery img{
+	width: 197px;
+    height: 130px;
+}
+
+.P{
+	width: 300px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: green;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	z-index: 2;
+	margin-left: -200px;
+	transform: scale(0);
+	animation-name: TheP;
+	animation-duration: 4s;
+}
+.P p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+@keyframes Menu{
+	20%{
+		transform: scale(1);
+		margin-left: -400px;
+		top: 400px;
+	}
+	60%{
+		width: 840px;
+		margin-left: -400px;
+		top: 1px;
+		transform: scale(1);
+	}
+	80%{
+		width: 840px;
+		transform: scale(1);
+		margin-left: 400px;
+		top: 1px;
+	}
+	100%{
+		transform: scale(1);
+		width: 1534px;
+		background-color: #dddddd;;
+		margin-left: -767px;
+		top: 1px;
+	}
+}
+
+@keyframes TheP{
+	20%{
+		transform: scale(1);
+		margin-left: -200px;
+		top: 400px;
+	}
+	40%{
+		margin-left: -200px;
+		top: 1px;
+		transform: scale(1);
+		background-color: yellow;
+	}
+	60%{
+		transform: scale(1);
+		margin-left: 480px;
+		top: 1px;
+		background-color: orange;
+	}
+	80%{
+		transform: scale(1);
+		margin-left: -767px;
+		top: 1px;
+		background-color: orange;
+	}
+	100%{
+		transform: scale(0);
+		margin-left: -200px;
+		top: 1px;
+		background-color: orange;
+	}
+}
